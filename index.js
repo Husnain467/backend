@@ -14,10 +14,10 @@ const port = 5000;
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors(
-    // {
-    //     source:"*",
-    //     methods:["GET","POST","PUT","UPDATE","DELETE"],
-    // }
+    {
+        source:"*",
+        methods:["GET","POST","PUT","UPDATE","DELETE"],
+    }
 
 ));
 
