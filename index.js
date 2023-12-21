@@ -21,7 +21,7 @@ app.use(cors(
 
 ));
 
-mongoose.connect('mongodb+srv://husnaink467:5262@cluster0.ghk3bf3.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://husnaink467:5262@cluster0.ghk3bf3.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/',addItemRoute);
 app.use('/',getItemsRoute);
